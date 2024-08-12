@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Interest Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Loan Interest Calculator</h1>
+    
+    <div>
+        <label for="amount">Loan Amount:</label>
+        <input type="number" id="amount" placeholder="Enter loan amount">
+    </div>
+    <div>
+        <label for="interestRate">Annual Interest Rate (%):</label>
+        <input type="number" id="interestRate" placeholder="Enter interest rate">
+    </div>
+    <div>
+        <label for="years">Duration (years):</label>
+        <input type="number" id="years" placeholder="Enter number of years">
+    </div>
+    <div>
+        <label for="compoundTimes">Compounds per Year (for Compound Interest):</label>
+        <input type="number" id="compoundTimes" placeholder="Enter compounding frequency">
+    </div>
+    
+    <button onclick="computeSimpleInterest()">Calculate Simple Interest</button>
+    <button onclick="computeCompoundInterest()">Calculate Compound Interest</button>
+
+    <h3 id="output"></h3>
+    
+    <script src="script.js"></script>
+</body>
+</html>
